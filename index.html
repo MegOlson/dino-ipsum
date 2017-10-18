@@ -14,26 +14,39 @@
     </div>
     <div class="container">
       <div class="errors"></div>
-
-      <div class="paragraph">
-        <form id="dinofy">
-          <div class="form-group">
-            <h2>Dinofy your Paragrah:</h2>
-            <input type="checkbox" name="dinofy" value="title"> Add a Title.<br>
-            <input type="checkbox" name="dinofy" value="start"> Start with "Dino ipsum saurus..."<br>
-            <input type="checkbox" name="dinofy" value="font"> Add a dino-themed font.<br>
+      <div class="panel panel-default">
+        <div class="panel-heading panel-color">
+          <div class="row">
+            <div class="col-md-8">
+              <form id="dinofy">
+                <div class="form-group">
+                  <h2>Dinofy your Paragrah:</h2>
+                  <input type="checkbox" name="dinofy" value="title"> Add a Title.<br>
+                  <input type="checkbox" name="dinofy" value="start"> Start with "Dino ipsum saurus..."<br>
+                  <input type="checkbox" name="dinofy" value="font"> Add a dino-themed font.<br>
+                </div>
+                <button class="btn" id="generateParagraph">Paragraph</button>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <div class="word">
+                <h2>Generate Word:</h2>
+                <button class="btn" id="generateWord">Word</button>
+                <div class="">
+                  <p class="dino-word"></p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button class="btn" id="generateParagraph">Paragraph</button>
-        </form>
-        <h3 class="dinoTitle"></h3>
-        <p class="dino-paragraph"></p>
+        </div>
+        <div class="panel-body">
+          <div class="page-header">
+            <h3 class="dinoTitle"></h3>
+          </div>
+          <p class="dino-paragraph"></p>
+        </div>
       </div>
 
-      <div class="word">
-        <h2>Generate Word:</h2>
-        <button class="btn" id="generateWord">Word</button>
-        <p class="dino-word"></p>
-      </div>
 
     </div>
   </body>
