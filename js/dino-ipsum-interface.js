@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('.dino-paragraph, .dinoTitle').addClass('dino-font');
         $('.dino-paragraph').text(apiOutput);
       }
-      
+
       if (dinofy.includes("start")) {
         start = "Dino ipsum saurus ";
         $('.dino-paragraph').text(start + apiOutput);

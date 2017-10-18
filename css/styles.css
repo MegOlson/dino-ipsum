@@ -28,3 +28,11 @@ h2 {
 .dino-paragraph {
   font-size: 20px;
 }
+
+body {
+  background-color: rgba(105, 129, 0, 0.4);
+}
+
+.btn {
+  background-color: #eee;
+}
