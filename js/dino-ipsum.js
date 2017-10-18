@@ -12,9 +12,14 @@ export class DinoIpsum {
   }
 
   punctuationInsert(paragraph) {
-    let array = [5, 8, 10];
     let words = paragraph.split(" ");
-    let 
+    for (let i = 0; i < words.length; i ++) {
+      if (i % 10 === 0 && i !== 0) {
+        words.splice(i, 0, ".");
+      }
+    }
+    let finalParagraph = words.join(" ");
+    return finalParagraph;
   }
 
 }

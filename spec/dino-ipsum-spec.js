@@ -17,8 +17,8 @@ describe("DinoIpsum", function(){
     expect(words.length).toEqual(6)
   });
 
-  it("should insert english words into paragraph", function(){
-    let paragraph = "Hello my name is Megan Atlasaurus Morosaurus Yuanmousaurus Scansoriopteryx Mojoceratops Unquillosaurus.";
-    expect(dinoIpsum.punctuationInsert(paragraph)).toEqual(6)
-  });
+  // it("should insert english words into paragraph", function(){
+  //   let paragraph = "Hello my name is Megan Atlasaurus Morosaurus Yuanmousaurus Scansoriopteryx Mojoceratops Hello my name is Megan Atlasaurus Morosaurus Yuanmousaurus Scansoriopteryx Mojoceratops";
+  //   expect(dinoIpsum.punctuationInsert(paragraph)).toEqual()
+  // });
 });

@@ -1,6 +1,7 @@
 import { DinoIpsum } from './../js/dino-ipsum.js';
 
 $(document).ready(function(){
+  let dinoIpsum = new DinoIpsum();
   let apiOutput = "";
   let dinofy = [];
   let start = "";
@@ -20,14 +21,14 @@ $(document).ready(function(){
       apiOutput = response[0].join(" ");
       if (dinofy.includes("font")) {
         $('.dino-paragraph, .dinoTitle').addClass('dino-font');
-        $('.dino-paragraph').text(apiOutput);
+        $('.dino-paragraph').text(dinoIpsum.wordInsert(apiOutput));
       }
 
       if (dinofy.includes("start")) {
         start = "Dino ipsum saurus ";
-        $('.dino-paragraph').text(start + apiOutput);
+        $('.dino-paragraph').text(start + dinoIpsum.wordInsert(apiOutput));
       }else{
-        $('.dino-paragraph').text(apiOutput);
+        $('.dino-paragraph').text(dinoIpsum.wordInsert(apiOutput));
       }
 
     }).fail(function(error){
