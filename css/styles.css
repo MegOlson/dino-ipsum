@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Tribeca";
+  src: url('../fonts/Tribeca.ttf');
+}
+
+h1, h2 {
+  font-family: 'Modak', cursive;
+}
+
+.dino-font {
+  font-family: 'Tribeca';
+}

@@ -18,12 +18,18 @@ $(document).ready(function(){
       }
 
       apiOutput = response[0].join(" ");
+      if (dinofy.includes("font")) {
+        $('.dino-paragraph, .dinoTitle').addClass('dino-font');
+        $('.dino-paragraph').text(apiOutput);
+      }
+      
       if (dinofy.includes("start")) {
         start = "Dino ipsum saurus ";
         $('.dino-paragraph').text(start + apiOutput);
       }else{
         $('.dino-paragraph').text(apiOutput);
       }
+
     }).fail(function(error){
       $('.errors').text(`There was an error processing your request: ${error.responseText}. Please try again.`);
     });
