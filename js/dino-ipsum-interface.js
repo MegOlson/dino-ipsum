@@ -7,9 +7,14 @@ $(document).ready(function(){
     e.preventDefault();
     $("input:checkbox[name=dinofy]:checked").each(function(){
         dinofy.push($(this).val());
-        console.log(dinofy);
     });
     $.get('http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=3&words=50').then(function(response){
+      apiOutput = response[0];
+      if (dinofy.includes("title")) {
+        let title = apiOutput.slice(0, 5);
+        title = title.join(" ");
+        $('.dinoTitle').text(title);
+      }
       apiOutput = response[0].join(" ");
       $('.dino-paragraph').text(apiOutput);
     }).fail(function(error){
