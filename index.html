@@ -9,16 +9,30 @@
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Dino Ipsum</h1>
+      <h1>Dino <img src=""> Ipsum</h1>
     </div>
     <div class="container">
-      <h3>Generate Paragraph:</h3>
-      <button class="btn" id="generateParagraph">Paragraph</button>
       <div class="errors"></div>
-      <p class="dino-paragraph"></p>
-      <h3>Generate Word:</h3>
-      <button class="btn" id="generateWord">Word</button>
-      <p class="dino-word"></p>
+
+      <div class="paragraph">
+        <form id="dinofy">
+          <div class="form-group">
+            <h3>Dinofy your Paragrah:</h3>
+            <input type="checkbox" name="dinofy" value="title"> Add a Title.<br>
+            <input type="checkbox" name="dinofy" value="start"> Start with "Dino ipsum saurus..."<br>
+            <input type="checkbox" name="dinofy" value="font"> Add a dino-themed font.<br>
+          </div>
+          <button class="btn" id="generateParagraph">Paragraph</button>
+        </form>
+        <p class="dino-paragraph"></p>
+      </div>
+
+      <div class="word">
+        <h3>Generate Word:</h3>
+        <button class="btn" id="generateWord">Word</button>
+        <p class="dino-word"></p>
+      </div>
+
     </div>
   </body>
 </html>
