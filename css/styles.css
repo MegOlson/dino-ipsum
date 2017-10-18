@@ -3,10 +3,28 @@
   src: url('../fonts/Tribeca.ttf');
 }
 
+body {
+  font-family: 'Manuale', serif;
+}
+
 h1, h2 {
   font-family: 'Modak', cursive;
+  letter-spacing: 5px;
 }
 
 .dino-font {
   font-family: 'Tribeca';
+}
+
+.jumbtron {
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.dino-paragraph {
+  font-size: 20px;
 }
